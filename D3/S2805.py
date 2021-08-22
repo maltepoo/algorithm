@@ -1,5 +1,3 @@
-import sys
-sys.stdin = open("input.txt")
 #2805. 농작물 수확하기
 T = int(input())
 for tc in range(1, T+1):
