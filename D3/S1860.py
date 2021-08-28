@@ -6,8 +6,6 @@ for tc in range(1, T+1):
 
     cos.sort()
     result = "Possible"
-    # if cos[0] < M:
-    #     result = "Impossible"
 
     for i in range(N):
         fish = cos[i] // M * K
