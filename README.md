@@ -4,11 +4,9 @@
 
 
 
-### ✅ D1 - solved
+### ✅ D1 - solved ~ 8/9
 
-### ⬜ D2 - ing
-
-* 8/29 - left 9
+### ✅  D2 - solved ~ 9/11
 
 ### ⬜ D3 - ing
 
