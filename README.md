@@ -1,13 +1,5 @@
-# SW Expert Academy 👩‍💻
+# algorithm 👩‍💻
 
-* 알고리즘 문제 풀이
+**SWEA & PROGRAMMERS**
 
-
-
-### ✅ D1 - solved ~ 8/9
-
-### ✅  D2 - solved ~ 9/11
-
-### ⬜ D3 - ing
-
-### ⬜ D4 - ing
+💩 하나라도 안풀면 죽음뿐 ...
