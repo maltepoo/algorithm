@@ -6,12 +6,13 @@
 #         if len(x) == len(y):
 #             answer += 1
 #     return answer
-from collections import Counter, deque
+
+from collections import Counter
 def solution(topping):
     answer = 0
     tp = Counter(topping)
     
-    s, e = 0, len(tp)
+    e = len(tp)
     st = set()
     
     for t in topping:
