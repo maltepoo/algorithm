@@ -1,6 +1,6 @@
 def solution(s):
     answer = []
-    s = sorted(map(lambda x: x.replace("{", "").replace('}', ""), s.split("},{")), key=lambda x: len(x))
+    s = sorted(map(lambda x: x.replace("{", "").replace('}', ""), s.split("},{")), key=len)
     for tuples in s:
         tuples = list(map(int, tuples.split(",")))
         for t in tuples:
