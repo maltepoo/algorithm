@@ -8,10 +8,9 @@ ans = 0
 while s <= e:
     h = (s+e)//2
     treesum = 0
-    for i in range(n):
-        left = trees[i] - h
-        if left > 0:
-            treesum += left
+    for tree in trees:
+        if tree >= h:
+            treesum += tree-h
     if treesum >= m:
         s = h+1
     else:
