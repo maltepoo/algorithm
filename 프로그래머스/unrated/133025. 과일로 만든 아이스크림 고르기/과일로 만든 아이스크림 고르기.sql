@@ -1,0 +1,1 @@
+SELECT A.flavor as flavor from (select * from first_half where total_order > 3000) A left join icecream_info B on A.flavor = B.flavor where ingredient_type = 'fruit_based' order by total_order desc;
