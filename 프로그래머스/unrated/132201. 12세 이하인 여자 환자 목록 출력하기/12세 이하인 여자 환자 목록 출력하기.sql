@@ -1,0 +1,1 @@
+SELECT pt_name, pt_no, gend_cd, age, IFNULL(TLNO, 'NONE') FROM PATIENT WHERE gend_cd = 'W' and age <= 12 order by age desc, pt_name;
