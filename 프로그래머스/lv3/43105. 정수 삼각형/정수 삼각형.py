@@ -1,5 +1,4 @@
 def solution(triangle):
-    answer = 0
     
     for i in range(len(triangle)-2, -1, -1):
         for j in range(0, i+1):
