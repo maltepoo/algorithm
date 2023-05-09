@@ -1,5 +1,6 @@
 import sys
 input = sys.stdin.readline
+sys.setrecursionlimit(3000)
 
 n, m = map(int, input().split())
 graph = [[] for _ in range(n+1)]
@@ -12,14 +13,10 @@ for _ in range(m):
     graph[v].append(u)
 
 def dfs(v):
-    st = [v]
-    while st:
-        nd = st.pop()
-        visited[nd] = 1
-        for i in graph[nd]:
-            if not visited[i]:
-                st.append(i)
-    return
+    visited[v] = True
+    for i in graph[v]:
+        if not visited[i]:
+            dfs(i)
 
 for i in range(1, n+1): # 방문한적 없는 노드로 dfs를 도는 회수가 연결 요소의 개수가 된다
     if not visited[i]:
