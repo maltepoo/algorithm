@@ -5,6 +5,7 @@ k = int(input())
 # 답 범위는 1 <= res <= k
 # 인덱스 k보다 큰 수가 k위치에 올 수 없기 때문
 # 임의의 x값을 설정하고 x보다 작거나 같은 원소의 개수가 k 값이랑 일치하면 정답
+# x = 3일때, 3보다 작은 수가 5개라면 B[5]는 3이라는 소리가 된다
 def binary_search(start, end):
     while start <= end:
         m = (start+end)//2
