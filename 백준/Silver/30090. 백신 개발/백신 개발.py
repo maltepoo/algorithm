@@ -1,12 +1,9 @@
 def check(s1, s2):
-    cnt, j = 0, 0
-    if s2 in s1:
-        return len(s2), s1
-    for i in range(len(s1)):
-        if s1[i] == s2[j] and j < len(s2)-1:
-            cnt += 1
-            j += 1
-    return cnt, s1+s2[cnt:]
+    maxOverlap = min(len(s1), len(s2))
+    for i in range(maxOverlap, 0, -1):
+        if s1[-i:] == s2[:i]:
+            return i, s1+s2[i:]
+    return 0, s1+s2
 
 def find_vaccine(s, visited, d):
     global maxword
