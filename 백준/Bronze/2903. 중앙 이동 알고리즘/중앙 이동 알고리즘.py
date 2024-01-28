@@ -1,8 +1,6 @@
-n = int(input())
-ns = [0]*16
-ns[0] = 2
+answer = 2
 
-for i in range(1, n+1):
-    ns[i] = ns[i-1]+(2**(i-1))
+for _ in range(int(input())):
+    answer = answer*2-1
 
-print(ns[n]**2)
+print(answer**2)
